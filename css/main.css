@@ -31,3 +31,12 @@ body {
 .line__visible--always {
   display: block;
 }
+
+.textarea {
+  position: absolute;
+  top: 0;
+  margin-top: 30px;
+  left: 0;
+  margin-left: 30px;
+  width: 20%;
+}
