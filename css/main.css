@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 10px;
+  background-color: #f0f0f0;
+  font-family: 'PT Sans', sans-serif;
+  text-align: center;
+  color: #ffffff;
+}
+
+.main-tree__element {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px 20px;
+  background-color: #0066ff;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.main-tree__element:hover,
+.selected,
+.main-tree__first-element {
+  background-color: #0052cc;
+  box-shadow: inset 0 0 3px 3px #003380;
+}
+
+.main-tree__line:not(.line__visible):not(.line__visible--always) {
+  display: none;
+}
+
+.line__visible,
+.line__visible--always {
+  display: block;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Эскалация</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <div class="main-tree">
+    <span class="main-tree__element main-tree__first-element">В чём проблема?</span>
+    <div class="main-tree__line line__visible line__visible--always">
+      <span id="1" class="main-tree__element">ТС прислала реестр</span>
+      <span id="2" class="main-tree__element">Машина стоит</span>
+      <span id="3" class="main-tree__element">Нет заказов</span>
+      <span id="4" class="main-tree__element">Контур сломался</span>
+      <div class="1__inner main-tree__line">
+        <span id="1.1" class="main-tree__element">Документ не был отправлен</span>
+        <span id="1.2" class="main-tree__element">Документ был отправлен</span>
+      </div>
+      <div class="2__inner main-tree__line">
+        <span id="2.1" class="main-tree__element">DESADV был отправлен</span>
+        <span id="2.2" class="main-tree__element">DESADV не был отправлен</span>
+      </div>
+      <div class="3__inner main-tree__line">
+        <span id="3.1" class="main-tree__element">Пора грустить</span>
+        <span id="3.2" class="main-tree__element">Хорош грустить, пора бухнуть</span>
+      </div>
+      <div class="4__inner main-tree__line">
+        <span id="4.1" class="main-tree__element">Позвонить в техподдержку</span>
+        <span id="4.2" class="main-tree__element">Выпилиться из Контура нах</span>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
