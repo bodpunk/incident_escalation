@@ -9,7 +9,7 @@ $(document).ready(function() {
       $('.main-tree__line:not(.line__visible) span').removeClass('selected'); // скрываем выделение элементов на скрытых ветках
       $('.textarea-block__text').text('В чём проблема?'); // Обнуляем содержимое textarea, сразу прописывая в него "В чём проблема?"
       $('.selected').each(function() { // для каждого элемента с классом .selected
-        $('.textarea-block__text').append('&#13;&#10;&#8595;&#13;&#10;' + $(this).text()); // добавляем его содержимое в textarea в новую строку
+        $('.textarea-block__text').append('&#13;&#10;&#13;&#10;' + $(this).text()); // добавляем его содержимое в textarea в новую строку
       });
     });
     $('.textarea-block__button').click(function() { // Ловим нажатие по кнопке "Копировать"
