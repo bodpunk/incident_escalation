@@ -11,6 +11,7 @@ $(document).ready(function() {
       $('.selected').each(function() { // для каждого элемента с классом .selected
         $('.textarea-block__text').append('&#13;&#10;&#13;&#10;' + $(this).text()); // добавляем его содержимое в textarea в новую строку
       });
+      $('.textarea-block__text').val($('.textarea-block__text').text()); // значение textarea = текст textarea (на случай введенных комментариев и последующего изменения элементов selected)
     });
     $('.textarea-block__button').click(function() { // Ловим нажатие по кнопке "Копировать"
       $('.textarea-block__text').select(); // Выделяем содержимое textarea
